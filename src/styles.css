@@ -1,0 +1,57 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.pokemons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+/* Make the modal cover the screen */
+.custom-modal {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.85
+  ); /* Add a semi-transparent dark background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Center the modal content */
+.custom-modal-body {
+  color: white;
+  text-align: center;
+}
+
+.custom-modal-header {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.9); /* Dark header background */
+  border-bottom: none;
+  text-align: center;
+  font-size: 24px;
+}
+
+/* Close button styling */
+button.close {
+  color: white;
+  font-size: 28px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+}
+
+/* For the modal image */
+.custom-modal img {
+  width: 200px;
+  height: 200px;
+  margin: 20px auto;
+}
